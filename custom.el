@@ -3,7 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" default)))
+ '(custom-safe-themes (quote ("969018bff4eb0686f638af47009d629b06f5e669b0f6c05863972130afc27b25" "1297a022df4228b81bc0436230f211bad168a117282c20ddcba2db8c6a200743" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" default)))
  '(magit-default-tracking-name-function (quote magit-default-tracking-name-branch-only))
  '(magit-key-mode-show-usage t))
 (custom-set-faces
@@ -15,6 +15,8 @@
  '(diff-added ((t (:foreground "green"))))
  '(diff-changed ((t (:foreground "yellow"))))
  '(diff-removed ((t (:inherit diff-changed :foreground "red"))))
+ '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :foreground "green" :inverse-video nil :underline nil :slant italic :weight normal))))
+ '(font-lock-comment-face ((t (:foreground "green" :inverse-video nil :underline nil :slant italic :weight normal))))
  '(header-line ((t (:inherit mode-line :inverse-video t :underline nil :slant normal :weight normal))))
  '(highlight ((t (:background "blue" :foreground "black"))))
  '(hl-line ((t (:inherit nil :underline nil))) t)
@@ -44,7 +46,7 @@
  '(magit-log-reflog-label-reset ((t (:foreground "IndianRed4" :box 1))))
  '(magit-tag ((t (:foreground "goldenrod4")))))
 
-(load-theme 'solarized-dark t)
+;(load-theme 'solarized-dark t)
 
 ;; disable bell function
 (setq ring-bell-function 'ignore)
